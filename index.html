@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile Usaha Buku </title>
+<link rel ="stylesheet" href ="style.css"/>
+<body>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html" class="btn-kembali">Home</a></li>
+    <li><a href="produk.html" class="btn-kembali">Produk</a></li>
+    <li><a href="Bedah Buku Artikel.html" class="btn-kembali">Bedah Buku Artikel</a></li>
+    <li><a href="Testimoni.html" class="btn-kembali">Testimoni</a></li>
+    <li><a href="Tampil Testimoni.html" class="btn-kembali">Tampil Testimoni</a></li>
+    <li><a href="Event.html" class="btn-kembali">Event</a></li>
+    <li><a href="Kontak.html" class="btn-kembali">Kontak</a></li>
+  </ul>
+</nav>
+<section class="daftar-produk">
+  <div class="produk">
+  <img src="images/MOCO STORE2.png">
+  <div class="container">
+  <div class="stat-card">
+    <span class="counter" data-target="150">0</span>
+    <span class="label">Pengunjung Puas</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="85">0</span>
+    <span class="label">Data Pengunjung</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="1200">0</span>
+    <span class="label">Buku Favorit</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="50">0</span>
+    <span class="label">Pengunjung Terbaik</span>
+  </div>
+
+  <div class="stat-card">
+    <span class="counter" data-target="99">0</span>
+    <span class="label">Rating Positif</span>
+  </div>
+</div>
+<script>
+  const counters = document.querySelectorAll('.counter');
+  
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      
+      // Mengatur durasi animasi agar halus
+      const speed = 150; 
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+</script>
+    <h1>SELAMAT DATANG DI <strong>MOCO STORE</strong></h1>
+    <P>Kami menyediakan berbagai jenis buku dari beragam kategori, mulai dari buku pendidikan, pengembangan diri, hingga bacaan umum 
+        seperti novel dan nonfiksi populer. Tersedia juga buku anak dan remaja, serta buku hobi dan keterampilan. Seluruh koleksi dipilih 
+        dari penerbit terpercaya dengan kualitas isi dan cetakan yang baik, dan dapat dipesan dengan mudah melalui toko online kami.</P>
+
+     <h2>Motto Usaha Buku</h2>
+     <p>Kami berkomitmen menyediakan buku-buku berkualitas yang bermanfaat, informatif, dan 
+        mudah diakses untuk mendukung minat baca serta kebutuhan belajar berbagai kalangan.</p>
+
+     <h2>Mengenal Ukuran Buku </h2>
+     <p>Ukuran buku sangat beragam, mulai dari ukuran kecil yang praktis dibawa, ukuran 
+        standar untuk pembelajaran, hingga ukuran besar untuk referensi dan koleksi khusus.</p>
+
+     <h2>Jenis Jenis Buku </h2>
+     <p>Kami menyediakan berbagai jenis buku, seperti buku pendidikan, pengembangan diri, 
+        novel, nonfiksi populer, serta buku anak dan remaja dengan pilihan yang terus 
+        diperbarui.</p>
+
+     <h2>Tips Merawat Buku </h2>
+     <p>Rawat buku dengan menyimpannya di tempat kering, terhindar dari sinar matahari 
+        langsung, serta menata buku secara rapi agar tetap awet dan nyaman dibaca.</p>
+
+     <h2>Informasi mencari buku terbaik</h2>
+     <p>Dalam memilih buku terbaik, sesuaikan dengan kebutuhan dan minat, periksa deskripsi 
+        isi, serta pilih buku dari penulis dan penerbit yang terpercaya.</p>
+
+     <h2>Lokasi Toko Kami</h2>
+     <p>Jl. Sudirman No. 18, Kelurahan Babakan, Kecamatan Tangerang, Kota Tangerang, Banten 
+        15118.</p>
+
+     <h2>Kontak Admin Toko</h2>
+     <p>Untuk informasi lebih lanjut atau pemesanan, silakan hubungi admin kami di WhatsApp: 
+        <strong>+62 812-3456-7890</strong>.</p>
+
+</body>
+</html>
